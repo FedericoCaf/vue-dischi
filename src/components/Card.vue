@@ -1,14 +1,25 @@
 <template>
   <div class="card-container">
+     <div class="img-container">
+         <img :src="card.poster" alt="">
+    </div> 
+ 
+    <div class="text-container fc-text-center">
+        <h3> {{card.title}} </h3>
+        <p> {{card.author}}</p>
+        <p>{{card.year}} </p>
+    </div>
 
-   
-
+    
   </div>
 </template>
 
 <script>
 export default {
- name: 'Card'
+ name: 'Card',
+ props: {
+   card: Object
+ }
 }
 </script>
 
@@ -20,9 +31,32 @@ export default {
 
   .card-container{
     width: calc(20% - 36px);
-    height: 270px;
+    height: 300px;
     background-color: #2E3A46;
     margin: 18px;
+    padding: 20px;
   }
+
+  .img-container{
+    width: 100%;
+     img{
+       max-width: 100%;
+       cursor: pointer;
+     }
+  }
+
+  .text-container{
+    margin-top: 10px;
+     h3{
+       color: white;
+       margin-bottom: 8px;
+       cursor: pointer;
+     }
+     p{
+       color: #7A7573
+     }
+  }
+
+
 
 </style>
