@@ -35,6 +35,11 @@ export default {
     background-color: #2E3A46;
     margin: 18px;
     padding: 20px;
+    transition: all 0.3s
+  }
+
+  .card-container:hover{
+    transform: scale(1.1, 1.1);
   }
 
   .img-container{

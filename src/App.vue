@@ -1,6 +1,6 @@
 <template>
-  <div>
-
+  <div class="wrapper">
+    
     <Header/>
 
     <Main/>
@@ -27,6 +27,9 @@ export default {
  @import "./assets/style/vars.scss";
  @import "./assets/style/generals.scss";
  @import "./assets/style/utilities.scss";
-  
+
+ .wrapper{
+   height: 100vh;
+ }
   
 </style>
