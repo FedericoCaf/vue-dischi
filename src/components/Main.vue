@@ -1,6 +1,6 @@
 <template> 
  
-    <main class="fc-container fc-flex fc-flex-justify-center fc-flex-wrap">
+    <main class="fc-container fc-flex fc-flex-justify-center">
       <div class="fc-container fc-flex fc-flex-justify-center fc-flex-wrap" v-if="loaded">
          <Card
           v-for="(card, index) in cards" :key="index"

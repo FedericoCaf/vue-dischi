@@ -25,6 +25,8 @@ export default {
      img{
        height: 100%;
        padding: 10px;
+       cursor: pointer;
+       margin-left: 5px;
      }
   }
  

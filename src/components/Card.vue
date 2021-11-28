@@ -30,8 +30,9 @@ export default {
   @import "../assets/style/utilities.scss";
 
   .card-container{
-    width: calc(20% - 36px);
-    height: 300px;
+    // width: calc(20% - 36px);
+    width: 180px;
+    // height: 300px;
     background-color: #2E3A46;
     margin: 18px;
     padding: 20px;
