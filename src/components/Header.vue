@@ -1,15 +1,36 @@
 <template>
 
-  <header> 
+  <header class="fc-flex fc-flex-between fc-flex-align-center"> 
      <img src="../assets/img/spotify-logo.png" alt="logo">
+     <Selection @sendSelection="getGen"/>
   </header>
 
 </template>
 
 <script>
 
+import Selection from './Selection.vue'
+
 export default {
  name: 'Header',
+ 
+ components: {
+   Selection
+ },
+
+ data(){
+    return{
+      selection : "",
+    }
+  },
+
+ methods:{
+   getGen(text){
+      this.selection = text;
+      return this.$emit("selectedGenr",this.selection);
+    }
+  },
+
 }
 </script>
 

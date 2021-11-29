@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
     
-    <Header/>
+    <Header @selectedGenr="selectedChild"/>
 
-    <Main/>
-
+    <Main :sendSelection="selected"/>
+    
   </div>
 </template>
 
@@ -18,7 +18,19 @@ export default {
   components: {
     Header,
     Main
-  }
+  },
+
+  data(){
+    return{
+     selected: "",
+    }
+   },
+
+   methods:{
+    selectedChild(text){
+      this.selected = text;
+    }
+  },
 }
 </script>
 
